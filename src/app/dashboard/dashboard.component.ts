@@ -13,6 +13,8 @@ export class DashboardComponent implements OnInit {
 
   products: Product[] = [];
 
+  cards: ('total' | 'customers' | 'latest' | 'categories')[] = [];
+
   constructor(private dashboardService: DashboardService) { }
 
   ngOnInit(): void {
