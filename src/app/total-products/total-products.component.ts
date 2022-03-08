@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-total-products',
@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./total-products.component.scss']
 })
 export class TotalProductsComponent implements OnInit {
+  @Input() total!: number;
 
   constructor() { }
 

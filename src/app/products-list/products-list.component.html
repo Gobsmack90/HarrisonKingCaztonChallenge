@@ -1,7 +1,7 @@
-<div class="h-screen w-full bg-white">
+<div class="h-screen w-full m-auto bg-white">
 
-  <h1 class="text-blue-900 text-4xl">List of Products</h1>
-  <div class="w-full h-screen overflow-auto">
+  <h1 class="text-center text-blue-900 text-4xl">List of Products</h1>
+  <div class="w-full h-calc m-auto overflow-auto flex flex-row flex-wrap">
     <app-product *ngFor="let product of products" [product]="product"></app-product>
   </div>
 </div>

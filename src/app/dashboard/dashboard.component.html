@@ -4,7 +4,12 @@
 
 <div *ngIf="!isLoading">
   <div class="flex flex-row h-screen">
-    <div class="w-80 h-full bg-gray-200">dashboard cards</div>
-    <app-products-list [products]="products"></app-products-list>
+    <div class="dashboard-cards-w h-full bg-gray-200">
+      <h1 class="p-2 text-xl text-center text-gray-500 font-bold border-b border-gray-300">Dashboard</h1>
+      <app-total-products [total]="products.length"></app-total-products>
+    </div>
+    <div class="products-w">
+      <app-products-list [products]="products"></app-products-list>
+    </div>
   </div>
 </div>
