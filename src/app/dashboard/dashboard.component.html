@@ -1,4 +1,10 @@
-<div class="flex flex-row h-screen">
-  <div class="w-80 h-full bg-gray-200">dashboard cards</div>
-  <app-products-list></app-products-list>
+<div *ngIf="isLoading">
+  <h1 class="text-center text-8xl text-blue-800">Loading...</h1>
+</div>
+
+<div *ngIf="!isLoading">
+  <div class="flex flex-row h-screen">
+    <div class="w-80 h-full bg-gray-200">dashboard cards</div>
+    <app-products-list [products]="products"></app-products-list>
+  </div>
 </div>
