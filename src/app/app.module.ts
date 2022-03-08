@@ -11,6 +11,7 @@ import { LatestComponent } from './latest/latest.component';
 import { CategoriesComponent } from './categories/categories.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ProductComponent } from './product/product.component';
+import { RemoveCardComponent } from './remove-card/remove-card.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ProductComponent } from './product/product.component';
     LatestComponent,
     CategoriesComponent,
     DashboardComponent,
-    ProductComponent
+    ProductComponent,
+    RemoveCardComponent
   ],
   imports: [
     BrowserModule,
