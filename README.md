@@ -1,27 +1,17 @@
-# CaztonCodingChallenge
+Create a metadata driven dashboard. It contains different configurable components.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.3.
+Components:
 
-## Development server
+1. List of products - Display a list of products. Each product has a title, picture, category, price and description. Please use this endpoint to fetch products: https://fakestoreapi.com/products
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+2. Total Products - A card that displays the total count of products. Endpoint:  https://fakestoreapi.com/products
 
-## Code scaffolding
+3. Customers - A card that displays the customer details (name, email, address and phone no) registered on the website. https://fakestoreapi.com/users
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+4. Latest product - This card will display any 1 random product (picture, title, category, price). https://fakestoreapi.com/products
 
-## Build
+5. Display categories - This card will display a list of different product categories. URL: https://fakestoreapi.com/products/categories
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+The app should allow you to create multiple dashboards which will be a combination of the above given components. Every time you create a new dashboard, allow the user to add these components to the dashboard. Once the dashboard is configured, allow the user to save it with a name (e.x. Dashboard 1, Dashboard 2, etc). Please use something for maintaining the state. Please add functionality to load the previously configured dashboard, choose a dashboard and display all the components on the UI.
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Please also make sure that you design a good UI - any framework or library is allowed (e.g. Bootstrap). Use the Fake Store API URLs to fetch data.
